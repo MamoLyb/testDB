@@ -1,0 +1,143 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #10b0a0;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px #173330;
+}
+
+*{
+    cursor: url('../img/cr/wok1.png'), auto;
+}
+a {
+	color: #fff;
+    transition: all 0.3s ease;
+    cursor: url('../img/cr/wok2.png'), auto;
+
+}
+form{
+	margin-top: 10px;
+}
+body{
+	background: url(../img/bg.png);
+   background-size: cover;
+   
+}
+.uptudate {
+	padding: 5px;
+	color: #fff;
+	text-shadow: 2px 2px 5px black;
+	border: 5px ridge #BAAAD7;
+}
+
+.wrap {
+	margin-left: 800px;
+	width: 1100px;
+	background: #EE215A;
+	padding-top: 50px;
+	color: #fff;
+	text-shadow: 2px 2px 3px black;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	text-align: center;
+	&__tableView {
+		width: 900px;
+		height: 350px;
+		padding: 0 15px 15px 15px;
+		margin: 0 auto;
+		overflow-y: scroll;
+	}
+	&__rows {
+		width: 100%;
+		height: 50px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__elems {
+		width: 200px;	
+	}
+	&__buttons {
+		padding-top: 150px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		width: 600px;
+		height: 200px;
+		justify-content: space-between;
+	}
+	&__button {
+		margin: 5px;
+		border: 10px ridge #BAAAD7;
+		width: 140px;
+		height: 50px;
+
+	}
+}
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.6);
+	top: 0;
+	left: 0;
+	color: #fff;
+	opacity: 0;
+	visibility: hidden;
+	&__body {
+		min-height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 30px 10px;
+	}
+	&__content {
+		background-color: #fff;
+		color: #000;
+		max-width: 800px;
+		padding: 30px;
+		position: relative;
+	}
+	&__close {
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		font-size: 20px;
+		color: red;
+		text-align: center;
+	}
+	&__title {
+		text-align: center;
+		font-size: 40px;
+		margin: 0 0 10px 0;
+	}
+	&__text {
+		font-size: 20px;
+	}
+}
+.popup:target{
+	opacity: 1;
+	visibility: visible;
+}
+
+#nah{
+	opacity: 1;
+	visibility: visible;
+}
+.top{
+	top: 0;
+	position: sticky;
+}
+#colorfull{
+	height: 50px;
+	background: #EE215A;
+}
